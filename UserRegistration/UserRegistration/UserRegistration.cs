@@ -67,5 +67,20 @@ namespace UserRegistration
             }
         }
 
+        public void Password()
+        {
+            Regex Password = new Regex("^[a-zA-Z0-9]{8,}?");
+            Console.WriteLine("Enter a Password :");
+            string Pass = Console.ReadLine();
+            if (Password.IsMatch(Pass))
+            {
+                Console.WriteLine("Password : " + Pass);
+            }
+            else
+            {
+                Console.WriteLine("Enter Password in valid format");
+            }
+        }
+
     }
 }
