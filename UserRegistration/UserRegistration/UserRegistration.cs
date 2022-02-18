@@ -39,7 +39,7 @@ namespace UserRegistration
             }
         }
         public void EmailID()
-        {
+         {
             Regex lastname = new Regex("^[a-z0-9]{3,}[-a-z0-9._]+@([-a-z0-9]+.)+[a-z]{2,3}$");
             Console.WriteLine("Enter EmailID :");
             string Email = Console.ReadLine();
