@@ -38,5 +38,20 @@ namespace UserRegistration
                 Console.WriteLine("Enter name in valid format");
             }
         }
+        public void EmailID()
+        {
+            Regex lastname = new Regex("^[a-z0-9]{3,}[-a-z0-9._]+@([-a-z0-9]+.)+[a-z]{2,3}$");
+            Console.WriteLine("Enter EmailID :");
+            string Email = Console.ReadLine();
+            if (lastname.IsMatch(Email))
+            {
+                Console.WriteLine("EmailID : " + Email);
+            }
+            else
+            {
+                Console.WriteLine("Enter EmailID in valid format");
+            }
+        }
+
     }
 }
