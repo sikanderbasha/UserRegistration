@@ -12,6 +12,7 @@ namespace UserRegistration
         {
             UserRegistration userRegistration = new UserRegistration();
             userRegistration.Firstname();
+            userRegistration.Lastname();
         }
     }
 }

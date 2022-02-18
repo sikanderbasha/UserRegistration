@@ -23,5 +23,20 @@ namespace UserRegistration
                 Console.WriteLine("Enter name in valid format");
             }
         }
+
+        public void Lastname()
+        {
+            Regex lastname = new Regex("^[A-Z]{1}[a-z]{3,15}$");
+            Console.WriteLine("Enter last Name :");
+            string last = Console.ReadLine();
+            if (lastname.IsMatch(last))
+            {
+                Console.WriteLine("Last Name : " + last);
+            }
+            else
+            {
+                Console.WriteLine("Enter name in valid format");
+            }
+        }
     }
 }
