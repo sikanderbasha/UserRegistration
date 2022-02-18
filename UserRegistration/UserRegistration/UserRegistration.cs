@@ -69,7 +69,7 @@ namespace UserRegistration
 
         public void Password()
         {
-            Regex Password = new Regex("^(?=.*[A-Z])(?=.*[0-9])[a-zA-Z0-9]{8,}$");
+            Regex Password = new Regex("^(?=.*[A-Z])(?=.*[0-9])(?=.+[!@#$%^&*])[a-zA-Z0-9!@#$%^&*]{8,}$");
             Console.WriteLine("Enter a Password :");
             string Pass = Console.ReadLine();
             if (Password.IsMatch(Pass))
